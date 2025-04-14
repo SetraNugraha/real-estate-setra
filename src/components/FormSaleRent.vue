@@ -17,7 +17,7 @@ const isActive = ref<string>('sale')
         >
           <button
             type="button"
-            class="flex flex-col items-center justify-center"
+            class="flex flex-col items-center justify-center transition-all duration-300"
             :class="isActive === 'sale' ? 'text-primary' : 'text-slate-300'"
             @click="isActive = 'sale'"
           >
@@ -29,7 +29,7 @@ const isActive = ref<string>('sale')
           </button>
           <button
             type="button"
-            class="flex flex-col items-center justify-center"
+            class="flex flex-col items-center justify-center transition-all duration-300"
             :class="isActive === 'rent' ? 'text-primary' : 'text-slate-300'"
             @click="isActive = 'rent'"
           >
