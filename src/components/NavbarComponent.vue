@@ -10,7 +10,7 @@
           alt="house-icon"
           class="size-10 p-2.5 rounded-full bg-primary"
         />
-        <h1 class="text-lg font-semibold">Rezilla</h1>
+        <h1 class="text-lg font-semibold font-poppins">Rezilla</h1>
       </div>
 
       <!-- Button Menu -->
