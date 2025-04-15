@@ -3,6 +3,7 @@ import Header from './components/HeaderComponent.vue'
 import Navbar from './components/NavbarComponent.vue'
 import Hero from './components/HeroComponent.vue'
 import FormSaleRent from './components/FormSaleRent.vue'
+import ClientCustomer from './components/ClientCustomer.vue'
 </script>
 
 <template>
@@ -26,6 +27,9 @@ import FormSaleRent from './components/FormSaleRent.vue'
 
     <!-- Form SALE RENT -->
     <FormSaleRent />
+
+    <!-- Client & Customer -->
+    <ClientCustomer />
   </div>
 </template>
 
