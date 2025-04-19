@@ -4,6 +4,7 @@ import Navbar from './components/NavbarComponent.vue'
 import Hero from './components/HeroComponent.vue'
 import FormSaleRent from './components/FormSaleRent.vue'
 import ClientCustomer from './components/ClientCustomer.vue'
+import About from './components/AboutComponent.vue'
 </script>
 
 <template>
@@ -30,6 +31,9 @@ import ClientCustomer from './components/ClientCustomer.vue'
 
     <!-- Client & Customer -->
     <ClientCustomer />
+
+    <!-- About -->
+    <About />
   </div>
 </template>
 
