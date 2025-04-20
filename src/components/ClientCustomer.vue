@@ -10,7 +10,7 @@ const getImage = (path: string, client: string) => {
   <div>
     <div class="my-12">
       <div>
-        <h1 class="text-slate-400 font-poppins font-normal text-lg flex flex-col items-center">
+        <h1 class="text-slate-400 font-poppins font-medium text-md flex flex-col items-center">
           Trusted by 100+ Companies <span>across the globe!</span>
         </h1>
 
@@ -37,7 +37,7 @@ const getImage = (path: string, client: string) => {
               class="-ml-3"
             />
           </div>
-          <p class="font-poppins flex flex-col text-sm">72K+ Happy <span>Customers</span></p>
+          <p class="font-poppins flex flex-col text-sm font-medium">72K+ Happy <span>Customers</span></p>
         </div>
 
         <!-- Customer -->
@@ -47,7 +47,7 @@ const getImage = (path: string, client: string) => {
           <div>
             <img src="../assets/img/villa.png" alt="villa" />
           </div>
-          <p class="font-poppins flex flex-col text-sm">200K+ New <span>Listings Everyday</span></p>
+          <p class="font-poppins flex flex-col text-sm font-medium">200K+ New <span>Listings Everyday</span></p>
         </div>
       </div>
     </div>

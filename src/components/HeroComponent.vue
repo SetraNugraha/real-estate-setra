@@ -3,7 +3,7 @@
 <template>
   <div>
     <div class="px-8 mt-10">
-      <h3 class="tracking-[.2rem] text-primary font-poppins">REAL ESTATE</h3>
+      <h3 class="tracking-[.2rem] text-primary font-poppins font-medium">REAL ESTATE</h3>
       <h1
         class="mt-2 text-[40px] text-black font-semibold font-poppins flex flex-col text-justify gap-y-2"
       >

@@ -5,8 +5,9 @@ type Facilities = {
 
 type Tags = {
   name: string
-  image: string | File
-  color: string
+  image: string
+  textColor: string
+  bgColor: string
 }
 
 interface Properties {
@@ -14,7 +15,7 @@ interface Properties {
   name: string
   address: string
   tags?: Tags
-  propertieImage: string | File
+  propertieImage: string
   price: number
   facilities: Facilities
 }
@@ -27,9 +28,10 @@ export const properties: Properties[] = [
     propertieImage: 'tranquil.png',
     price: 5970,
     tags: {
-      name: 'popular',
+      name: 'Popular',
       image: 'popular.svg',
-      color: 'FFE1E1',
+      textColor: '#FF1111',
+      bgColor: '#FFE1E1',
     },
     facilities: {
       beds: 4,
@@ -45,7 +47,8 @@ export const properties: Properties[] = [
     tags: {
       name: 'New Listing',
       image: 'new-listing.svg',
-      color: 'D7EEFF',
+      textColor: '#119BFF',
+      bgColor: '#D7EEFF',
     },
     facilities: {
       beds: 3,
@@ -59,9 +62,10 @@ export const properties: Properties[] = [
     propertieImage: 'charming.png',
     price: 3450,
     tags: {
-      name: 'Dsicounted Price',
+      name: 'Discounted Price',
       image: 'discounted.svg',
-      color: 'F1FFF1',
+      textColor: '#00CE3A',
+      bgColor: '#F1FFF1',
     },
     facilities: {
       beds: 4,

@@ -5,7 +5,7 @@
     <div class="px-7 my-20">
       <!-- Tittle & Description -->
       <div>
-        <h3 class="text-md text-primary font-poppins tracking-widest">WHO ARE WE</h3>
+        <h3 class="text-md text-primary font-poppins tracking-widest font-medium">WHO ARE WE</h3>
         <h1 class="text-[28px] font-poppins font-semibold leading-10">
           Assisting individuals in <br />
           locating the <br />
@@ -62,7 +62,7 @@
         >
           <img src="../assets/about/smart-home.svg" alt="smar-home" />
           <div class="flex flex-col items-start gap-y-2">
-            <h1 class="text-primary font-poppins">Donec porttitor euismod</h1>
+            <h1 class="text-primary font-poppins font-medium">Donec porttitor euismod</h1>
             <p class="text-slate-400 font-poppins text-sm leading-">
               Nullam a lacinia ipsum, nec dignissim purus. Nulla
             </p>
@@ -75,7 +75,7 @@
         >
           <img src="../assets/about/user-octagon.svg" alt="user-octagon" />
           <div class="flex flex-col items-start gap-y-2">
-            <h1 class="text-primary font-poppins">Donec porttitor euismod</h1>
+            <h1 class="text-primary font-poppins font-medium">Donec porttitor euismod</h1>
             <p class="text-slate-400 font-poppins text-sm leading-">
               Nullam a lacinia ipsum, nec dignissim purus. Nulla
             </p>

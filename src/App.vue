@@ -5,6 +5,7 @@ import Hero from './components/HeroComponent.vue'
 import FormSaleRent from './components/FormSaleRent.vue'
 import ClientCustomer from './components/ClientCustomer.vue'
 import About from './components/AboutComponent.vue'
+import Properties from './components/PropertiesComponent.vue'
 </script>
 
 <template>
@@ -34,6 +35,9 @@ import About from './components/AboutComponent.vue'
 
     <!-- About -->
     <About />
+
+    <!-- Properties -->
+     <Properties />
   </div>
 </template>
 

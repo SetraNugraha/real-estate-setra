@@ -85,7 +85,7 @@ const isActive = ref<string>('sale')
         <!-- Advance Setting -->
         <div class="flex items-center justify-start mt-3 gap-x-3">
           <img src="../assets/icons/setting.svg" alt="setting" />
-          <p class="font-poppins font-normal text-primary">Advance Search</p>
+          <p class="font-poppins text-primary font-medium">Advance Search</p>
         </div>
 
         <!-- Button Search -->
