@@ -6,6 +6,7 @@ import FormSaleRent from './components/FormSaleRent.vue'
 import ClientCustomer from './components/ClientCustomer.vue'
 import About from './components/AboutComponent.vue'
 import Properties from './components/PropertiesComponent.vue'
+import Services from './components/ServicesComponent.vue'
 </script>
 
 <template>
@@ -37,7 +38,10 @@ import Properties from './components/PropertiesComponent.vue'
     <About />
 
     <!-- Properties -->
-     <Properties />
+    <Properties />
+
+    <!-- Serivces -->
+    <Services />
   </div>
 </template>
 

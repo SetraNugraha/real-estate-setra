@@ -1,13 +1,10 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { properties } from '@/dummyData/properties'
+import { getImage } from '@/utils/getImage'
 
 const btnFilters: string[] = ['All', 'Sell', 'Rent']
 const isSelectedFilter = ref<string>('All')
-
-const getImage = (path: string, image: string) => {
-  return new URL(`../assets/${path}/${image}`, import.meta.url).href
-}
 </script>
 
 <template>
