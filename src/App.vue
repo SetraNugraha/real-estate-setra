@@ -7,6 +7,7 @@ import ClientCustomer from './components/ClientCustomer.vue'
 import About from './components/AboutComponent.vue'
 import Properties from './components/PropertiesComponent.vue'
 import Services from './components/ServicesComponent.vue'
+import NeighborhoodProperties from './components/NeighborhoodProperties.vue'
 </script>
 
 <template>
@@ -42,6 +43,9 @@ import Services from './components/ServicesComponent.vue'
 
     <!-- Serivces -->
     <Services />
+
+    <!-- Neighborhood Porperties -->
+    <NeighborhoodProperties />
   </div>
 </template>
 
