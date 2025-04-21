@@ -8,6 +8,7 @@ import About from './components/AboutComponent.vue'
 import Properties from './components/PropertiesComponent.vue'
 import Services from './components/ServicesComponent.vue'
 import NeighborhoodProperties from './components/NeighborhoodProperties.vue'
+import Blogs from './components/BlogsComponent.vue'
 </script>
 
 <template>
@@ -46,6 +47,9 @@ import NeighborhoodProperties from './components/NeighborhoodProperties.vue'
 
     <!-- Neighborhood Porperties -->
     <NeighborhoodProperties />
+
+    <!-- Blogs & Posts -->
+    <Blogs />
   </div>
 </template>
 
