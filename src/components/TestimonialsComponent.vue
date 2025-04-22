@@ -59,7 +59,7 @@ import { getImage } from '@/utils/getImage'
 
     <!-- Card Register Agent -->
     <div
-      class="relative mt-20 px-5 flex flex-col gap-y-7 bg-[#3A0CA3] rounded-[20px] overflow-hidden"
+      class="relative mt-[100px] px-[30px] flex flex-col gap-y-10 bg-[#3A0CA3] rounded-[20px] overflow-hidden"
     >
       <!-- Big Bubble Gradient -->
       <span
