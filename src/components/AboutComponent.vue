@@ -5,13 +5,12 @@
     <div class="px-7 my-20">
       <!-- Tittle & Description -->
       <div>
-        <h3 class="text-md text-primary font-poppins tracking-widest font-medium">WHO ARE WE</h3>
-        <h1 class="text-[28px] font-poppins font-semibold leading-10">
+        <h3 class="text-md text-primary font-poppins tracking-[.2rem] font-medium">WHO ARE WE</h3>
+        <h1 class="text-[27px] font-poppins font-semibold leading-10">
           Assisting individuals in <br />
-          locating the <br />
-          appropriate real estate.
+          locating the appropriate real estate.
         </h1>
-        <p class="mt-5 text-[14px] text-slate-400 font-poppins leading-6 tracking-wide">
+        <p class="mt-5 text-[13px] text-slate-400 font-poppins leading-6 tracking-wide">
           Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla
           convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.
         </p>

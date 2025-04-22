@@ -11,8 +11,8 @@ const isSelectedFilter = ref<string>('All')
   <div class="px-7 my-20">
     <!-- Tittle & Description -->
     <div class="font-poppins">
-      <h3 class="text-[16px] text-primary tracking-widest font-medium">CHECKOUT OUR NEW</h3>
-      <h1 class="text-[28px] font-semibold tracking-wide">Latest Listed Properties</h1>
+      <h3 class="text-[16px] text-primary tracking-[.2rem] font-medium">CHECKOUT OUR NEW</h3>
+      <h1 class="text-[27px] font-semibold tracking-wide">Latest Listed Properties</h1>
       <p class="text-[14px] text-slate-400 tracking-wider mt-3">
         Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.
       </p>

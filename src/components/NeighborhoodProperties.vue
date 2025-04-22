@@ -20,9 +20,9 @@ import { getImage } from '@/utils/getImage'
     </div>
 
     <!-- Image -->
-    <div class="relative w-full flex flex-wrap gap-5.5 mt-8">
+    <div class="relative w-full grid grid-cols-2 gap-5.5 mt-8">
       <span
-        class="absolute bottom-20 left-38 size-14 bg-gradient-to-tl from-[#dff5fc] via-[#ecefff] via-30% to-[#4263fa] rounded-full opacity-60"
+        class="absolute bottom-20 left-35 size-14 bg-gradient-to-tl from-[#dff5fc] via-[#ecefff] via-30% to-[#4263fa] rounded-full opacity-60"
       ></span>
 
       <div v-for="item of neighborhoodProperties" :key="item.id">
@@ -55,7 +55,7 @@ import { getImage } from '@/utils/getImage'
         <div class="flex flex-col items-center gap-y-2">
           <img :src="getImage('team', user.image)" :alt="user.name" class="w-[120px] h-[170px]" />
           <h3 class="font-medium">{{ user.name }}</h3>
-          <p class="text-primary text-[12px] tracking-wider -mt-2">{{ user.job }}</p>
+          <p class="text-primary text-[13px] tracking-wider -mt-2">{{ user.job }}</p>
         </div>
       </div>
     </div>

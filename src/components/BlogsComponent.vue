@@ -18,10 +18,10 @@ import { getImage } from '@/utils/getImage'
           <img
             :src="getImage('blogs', blog.image)"
             :alt="blog.tittle"
-            class="rounded-[20px] brightness-80"
+            class="rounded-[20px] brightness-80 w-full h-[200px] object-cover"
           />
           <span
-            class="absolute top-0 left-5 py-1 px-2 rounded-b-[10px] bg-white text-center leading-[16px]"
+            class="absolute top-0 left-5 py-2 px-3 rounded-b-[10px] bg-white text-center leading-[16px] shadow-lg shadow-gray-600"
           >
             <p class="font-medium text-[16px]">{{ blog.date }}</p>
             <p class="text-slate-400 text-[13px]">{{ blog.day }}</p>
@@ -29,7 +29,7 @@ import { getImage } from '@/utils/getImage'
         </div>
 
         <h1 class="text-white font-medium text-[20px] mt-3">{{ blog.tittle }}</h1>
-        <p class="text-[12px] text-slate-400 tracking-widest mt-2">{{ blog.body }}</p>
+        <p class="text-[12px] text-slate-300 tracking-widest mt-2">{{ blog.body }}</p>
       </div>
     </div>
 

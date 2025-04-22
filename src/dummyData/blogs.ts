@@ -13,7 +13,7 @@ export const blogs: Blogs[] = [
     tittle: 'Top 10 Home Buying Mistakes to Avoid',
     body: 'Etiam eget elementum elit. Aenean dignissim dapibus vestibulum',
     image: 'post1.jpg',
-    date: '18',
+    date: '28',
     day: 'Tue',
   },
 
