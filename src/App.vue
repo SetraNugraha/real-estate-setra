@@ -10,6 +10,7 @@ import Services from './components/ServicesComponent.vue'
 import NeighborhoodProperties from './components/NeighborhoodProperties.vue'
 import Blogs from './components/BlogsComponent.vue'
 import Testimonials from './components/TestimonialsComponent.vue'
+import Footer from './components/FooterComponent.vue'
 </script>
 
 <template>
@@ -54,6 +55,9 @@ import Testimonials from './components/TestimonialsComponent.vue'
 
     <!-- Testimonials -->
     <Testimonials />
+
+    <!-- Footer -->
+     <Footer />
   </div>
 </template>
 

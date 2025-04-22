@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <div class="flex items-center justify-between px-8 pt-5">
+    <div class="flex items-center justify-between px-7 pt-5">
       <!-- Logo -->
       <div class="flex items-center gap-x-1.5">
         <img
