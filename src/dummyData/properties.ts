@@ -83,4 +83,28 @@ export const properties: Properties[] = [
       bath: 3,
     },
   },
+
+  {
+    id: 5,
+    name: 'Grand Estate on the Hilltop',
+    address: '11 Cortuis Alas, GS 0019',
+    propertieImage: 'tranquil.png',
+    price: 7761,
+    facilities: {
+      beds: 1,
+      bath: 2,
+    },
+  },
+
+  {
+    id: 6,
+    name: 'Grand Estate on the Hilltop',
+    address: '998 Willian CourtBurien, SA 88761',
+    propertieImage: 'charming.png',
+    price: 4459,
+    facilities: {
+      beds: 2,
+      bath: 2,
+    },
+  },
 ]

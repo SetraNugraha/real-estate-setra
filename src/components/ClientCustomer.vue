@@ -1,57 +1,54 @@
 <script lang="ts" setup>
-const clients: Array<string> = ['google', 'amazon', 'logitech', 'spotify', 'samsung', 'netflix']
-
-const getImage = (path: string, client: string) => {
-  return new URL(`../assets/${path}/${client}.png`, import.meta.url).href
-}
+import HappyCustomer from './layouts/HappyCustomer.vue'
+import NewListings from './layouts/NewListings.vue'
+import CompaniesSection from './layouts/CompaniesSection.vue'
 </script>
 
 <template>
-  <div>
-    <div class="my-12">
-      <div>
-        <h1 class="text-slate-400 font-poppins font-medium text-md flex flex-col items-center">
-          Trusted by 100+ Companies <span>across the globe!</span>
+  <div class="xl:hidden my-12">
+    <div>
+      <h1 class="text-slate-400 font-poppins font-medium text-md flex flex-col items-center">
+        Trusted by 100+ Companies <span>across the globe!</span>
+      </h1>
+
+      <!-- Client -->
+      <CompaniesSection />
+    </div>
+
+    <div>
+      <!-- Happy Customer -->
+      <HappyCustomer />
+
+      <!-- New Listings -->
+      <NewListings />
+    </div>
+  </div>
+
+  <!-- Desktop -->
+  <div class="hidden xl:block">
+    <div class="mx-[250px] mt-[100px]">
+      <!-- Customer & New Listings -->
+      <div class="flex items-center justify-center gap-x-5">
+        <div class="w-[360px]">
+          <HappyCustomer />
+        </div>
+
+        <div class="w-[320px]">
+          <NewListings />
+        </div>
+      </div>
+
+      <!-- Companies -->
+      <div class="relative mt-30 flex flex-col items-center justify-center gap-y-5">
+        <!-- Bubble -->
+        <span
+          class="absolute -top-5 left-15 size-17 rounded-full bg-gradient-to-tl from-[#ffffff] via-[#f0f2fc] via-30% to-[#99acff]"
+        ></span>
+        <h1 class="text-slate-400 font-poppins font-medium">
+          Trusted by 100+ Companies across the globe!
         </h1>
 
-        <!-- Client -->
-        <div class="flex items-center gap-x-12 pl-7 mt-10 overflow-x-auto scrollbar-hide grayscale">
-          <img
-            v-for="client of clients"
-            :key="client.valueOf"
-            :src="getImage('client', client)"
-            :alt="client"
-          />
-        </div>
-      </div>
-      <!-- Customer -->
-      <div
-        class="flex items-center justify-center gap-x-5 w-[90%] mx-auto mt-10 py-6 rounded-full shadow-2xl shadow-slate-200"
-      >
-        <div class="flex items-center">
-          <img
-            v-for="num of 6"
-            :key="num"
-            :src="getImage('customer', `customer-${num}`)"
-            alt="customer"
-            class="-ml-3"
-          />
-        </div>
-        <p class="font-poppins flex flex-col text-[16px] font-medium">
-          72K+ Happy <span>Customers</span>
-        </p>
-      </div>
-
-      <!-- Customer -->
-      <div
-        class="flex items-center justify-start pl-5 gap-x-5 mt-10 w-[90%] mx-auto py-5 rounded-full shadow-2xl shadow-slate-200"
-      >
-        <div>
-          <img src="../assets/img/villa.png" alt="villa" />
-        </div>
-        <p class="font-poppins flex flex-col text-[16px] font-medium">
-          200K+ New <span>Listings Everyday</span>
-        </p>
+        <CompaniesSection />
       </div>
     </div>
   </div>

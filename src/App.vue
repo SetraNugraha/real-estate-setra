@@ -5,7 +5,7 @@ import Hero from './components/HeroComponent.vue'
 import FormSaleRent from './components/FormSaleRent.vue'
 import ClientCustomer from './components/ClientCustomer.vue'
 import About from './components/AboutComponent.vue'
-import Properties from './components/PropertiesComponent.vue'
+import ListedProperties from './components/ListedProperties.vue'
 import Services from './components/ServicesComponent.vue'
 import NeighborhoodProperties from './components/NeighborhoodProperties.vue'
 import Blogs from './components/BlogsComponent.vue'
@@ -17,7 +17,7 @@ import Footer from './components/FooterComponent.vue'
   <div>
     <!-- Background linear -->
     <span
-      class="absolute -z-10 p-0 top-0 h-[894px] w-full rounded-b-full bg-gradient-to-b from-[#deeaee] via-[#deeaee] via-30% to-[#1b44fa] opacity-30"
+      class="absolute -z-10 p-0 top-0 h-[900px] w-full rounded-b-full bg-gradient-to-b from-[#deeaee] via-[#deeaee] via-30% to-[#1b44fa] opacity-30"
     ></span>
 
     <div class="hidden xl:block">
@@ -33,7 +33,9 @@ import Footer from './components/FooterComponent.vue'
     <!-- END Hero -->
 
     <!-- Form SALE RENT -->
-    <FormSaleRent />
+    <div class="xl:hidden">
+      <FormSaleRent />
+    </div>
 
     <!-- Client & Customer -->
     <ClientCustomer />
@@ -42,7 +44,7 @@ import Footer from './components/FooterComponent.vue'
     <About />
 
     <!-- Properties -->
-    <Properties />
+    <ListedProperties />
 
     <!-- Serivces -->
     <Services />
@@ -57,7 +59,7 @@ import Footer from './components/FooterComponent.vue'
     <Testimonials />
 
     <!-- Footer -->
-     <Footer />
+    <Footer />
   </div>
 </template>
 

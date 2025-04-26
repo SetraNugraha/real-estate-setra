@@ -7,9 +7,9 @@ const isActive = ref<string>('sale')
 <template>
   <div>
     <!-- Form SALE RENT -->
-    <div class="px-8 mt-5 my-10 w-full">
+    <div class="px-8 w-full xl:w-[420px]">
       <form
-        class="bg-white rounded-[20px] ring-1 ring-slate-200 pb-10 px-7 shadow-xl shadow-slate-200"
+        class="bg-white rounded-[20px] ring-1 ring-slate-200 pb-10 px-7 shadow-xl shadow-slate-200 xl:shadow-slate-500/50"
       >
         <!-- Header -->
         <div

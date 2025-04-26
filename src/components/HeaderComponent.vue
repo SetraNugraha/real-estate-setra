@@ -3,7 +3,7 @@
 <template>
   <div>
     <!-- Header -->
-    <div class="bg-primary py-2 px-24 flex items-center justify-between">
+    <div class="bg-primary py-2 px-55 flex items-center justify-between">
       <!-- Address -->
       <div class="flex items-center gap-x-1 text-xs">
         <img src="../assets/icons/maps.svg" alt="address" class="size-3.5" />
@@ -14,7 +14,7 @@
       <div class="flex items-center gap-x-5">
         <div class="flex items-center gap-x-2 text-xs">
           <img src="../assets/icons/phone.svg" alt="address" class="size-3.5" />
-          <p class="text-white">+62 0812-8321-4126</p>
+          <p class="text-white">+1 206-214-2298</p>
         </div>
 
         <div class="flex items-center gap-x-2 text-xs">
