@@ -43,7 +43,7 @@ export const neighborhoodProperties: NeighborhoodProperties[] = [
   {
     id: 5,
     total: 112,
-    image: 'tranquil.png',
+    image: 'pool.jpg',
     city: 'San Francisco, CA',
   },
 ]

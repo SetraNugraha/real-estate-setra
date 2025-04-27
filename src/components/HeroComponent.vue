@@ -3,13 +3,13 @@ import FormSaleRent from './FormSaleRent.vue'
 </script>
 
 <template>
-  <div>
+  <div class="xl:px-[260px]">
     <h3
-      class="px-7 xl:px-[300px] mt-10 xl:mt-[90px] tracking-[.2rem] text-primary font-poppins font-medium"
+      class="px-7 mt-10 xl:mt-[90px] tracking-[.2rem] text-primary font-poppins font-medium xl:px-0"
     >
       REAL ESTATE
     </h3>
-    <div class="xl:flex xl:items-center xl:justify-between xl:px-[300px]">
+    <div class="xl:flex xl:items-center xl:justify-between">
       <!-- LEFT -->
       <div class="xl:flex xl:flex-col xl:gap-y-5 xl:w-1/2">
         <!-- Text -->
@@ -21,7 +21,7 @@ import FormSaleRent from './FormSaleRent.vue'
 
           <div>
             <p
-              class="text-xs font-poppins leading-5 tracking-wider text-justify text-[#808080] w-[85%] xl:mt-3"
+              class="text-xs font-poppins leading-5 tracking-wider text-justify text-[#808080] w-[90%] xl:w-[75%] xl:mt-3"
             >
               Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu
               sapien sodales vulputate ac in purus.

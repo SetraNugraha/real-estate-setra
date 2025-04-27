@@ -3,8 +3,8 @@ const menus: Array<string> = ['About', 'Listings', 'Services', 'Blogs']
 </script>
 
 <template>
-  <div>
-    <div class="flex items-center justify-between px-7 pt-5 xl:px-[250px]">
+  <div class="xl:px-[260px]">
+    <div class="flex items-center justify-between px-7 pt-5 xl:px-0">
       <!-- Menus Navbar Desktop -->
       <div class="hidden xl:block">
         <div class="flex items-center gap-x-7">
