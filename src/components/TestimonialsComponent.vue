@@ -69,37 +69,51 @@ import { getImage } from '@/utils/getImage'
     </div>
 
     <!-- Card Register Agent -->
-    <div
-      class="relative mt-20 px-[30px] flex flex-col gap-y-10 bg-[#3A0CA3] rounded-[20px] overflow-hidden"
-    >
-      <!-- Big Bubble Gradient -->
-      <span
-        class="absolute -top-25 -right-10 size-60 -z-0 rounded-full bg-gradient-to-tr from-[#5b10f3] via-[#7142df] via-20% to-[#f6f6f8] opacity-30"
-      ></span>
-
-      <!-- Tittle -->
-      <div class="pt-[100px] z-10 text-white">
-        <h1 class="font-semibold text-[27px]">Become a Agent.</h1>
-        <p class="text-[13px]">
-          Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque.
-        </p>
-      </div>
-
-      <!-- Button -->
-      <div>
-        <button
-          type="button"
-          class="py-3 px-7 font-medium text-[16px] rounded-[30px] bg-white text-[#3A0CA3]"
-        >
-          Register Now
-        </button>
-      </div>
-
-      <div class="relative flex items-center justify-center">
+    <div class="relative mt-20 xl:mt-60 bg-[#3A0CA3] rounded-[20px]">
+      <div
+        class="relative px-[30px] grid grid-cols-1 xl:grid-cols-3 xl:place-items-center gap-y-10 overflow-hidden xl:overflow-visible xl:h-[250px]"
+      >
+        <!-- Big Bubble Gradient -->
         <span
-          class="absolute size-10 left-12 top-32 rounded-full bg-gradient-to-tl from-[#3A0CA3] via-[#7941fc] via-40% to-[#fbfbfd] opacity-50"
+          class="absolute -top-25 -right-10 size-60 xl:size-20 xl:top-10 xl:right-15 xl:overflow-hidden -z-0 rounded-full bg-gradient-to-tr from-[#5b10f3] via-[#7142df] via-20% to-[#f6f6f8] opacity-30"
         ></span>
-        <img src="../assets/img/doctor.png" alt="doctor" class="z-10" />
+
+        <!-- Dummy Element on Desktop -->
+        <span class="hidden xl:block"></span>
+
+        <!-- Wrapper Tittle & Button Register -->
+        <div
+          class="grid grid-cols-1 gap-y-7 xl:grid-cols-2 xl:place-items-center xl:order-2 xl:col-span-2"
+        >
+          <!-- Tittle -->
+          <div class="pt-[100px] z-10 text-white xl:pt-0">
+            <h1 class="font-semibold text-[27px] xl:text-[40px]">Become a Agent.</h1>
+            <p class="text-[13px] xl:text-[16px] text-slate-300/80 tracking-wide">
+              Fusce venenatis tellus a felis scelerisque. <br class="hidden xl:block" />
+              venenatis tellus a felis scelerisque.
+            </p>
+          </div>
+
+          <!-- Button Register Now-->
+          <div class="">
+            <button
+              type="button"
+              class="py-3 px-7 font-medium text-[16px] rounded-[30px] bg-white text-[#3A0CA3]"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Doctor Image -->
+        <div
+          class="relative flex items-center justify-center xl:col-span-1 xl:h-[300px] xl:absolute xl:bottom-0 xl:left-30"
+        >
+          <span
+            class="absolute size-10 xl:size-20 left-12 xl:left-60 top-32 xl:top-45 rounded-full bg-gradient-to-tl from-[#3A0CA3] via-[#7941fc] via-40% to-[#fbfbfd] opacity-50"
+          ></span>
+          <img src="../assets/img/doctor.png" alt="doctor" class="z-10 xl:h-full" />
+        </div>
       </div>
     </div>
   </div>
