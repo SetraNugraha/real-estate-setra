@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 import { testimonials } from '@/dummyData/testimonials'
-import { getImage } from '@/utils/getImage'
+import CardTestimonial from './layouts/CardTestimonial.vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import { useScreenSize } from '@/utils/useSreenSize'
+
+const { isMobile } = useScreenSize()
 </script>
 
 <template>
@@ -21,50 +27,35 @@ import { getImage } from '@/utils/getImage'
         </p>
       </div>
 
-      <!-- Card Testimonials -->
-      <div
-        class="xl:w-1/3 xl:mx-auto relative mt-10 p-7 rounded-[20px] shadow-xl shadow-slate-200 bg-white"
-      >
+      <!-- Wrapper Card -->
+      <div class="relative xl:w-1/3 xl:mx-auto mt-10 xl:p-5">
         <!-- Bubble -->
         <span
-          class="absolute -top-6 right-12 xl:right-110 -z-50 size-12 rounded-full bg-gradient-to-tl from-[#dff5fc] via-[#ecefff] via-30% to-[#9badfc]"
+          class="absolute -top-7 right-15 xl:top-0 xl:left-0 -z-50 size-12 rounded-full bg-gradient-to-tl from-[#dff5fc] via-[#ecefff] via-30% to-[#9badfc]"
         ></span>
-
-        <!-- Icon Quote -->
-        <img src="../assets/icons/quote.svg" alt="quote" />
-
-        <!-- Body Testimonials -->
-        <div
-          class="flex flex-col items-start justify-center gap-y-7"
-          v-for="testimoni of testimonials"
-          :key="testimoni.id"
+        <Swiper
+          :direction="isMobile ? 'horizontal' : 'vertical'"
+          :slides-per-view="1"
+          :space-between="20"
+          :loop="true"
+          :modules="[Autoplay, Pagination]"
+          :autoplay="{ delay: 2000 }"
+          :pagination="{ el: '.testimoni-pagination' }"
+          class="rounded-[30px] xl:p-5 xl:h-[400px]"
         >
-          <!-- Text -->
-          <p class="leading-7 text-[16px] font-medium mt-3">{{ testimoni.body }}</p>
+          <SwiperSlide v-for="testimoni of testimonials" :key="testimoni.id" class="xl:p-2">
+            <CardTestimonial
+              :body="testimoni.body"
+              :username="testimoni.username"
+              :profile-image="testimoni.profileImage"
+            />
+          </SwiperSlide>
+        </Swiper>
 
-          <!-- Horizontal Line -->
-          <span class="h-[1px] w-full bg-slate-300"></span>
-
-          <!-- Profile User -->
-          <div class="flex items-center gap-x-3 xl:w-full xl:-my-2">
-            <img :src="getImage('testimonials', testimoni.profileImage)" alt="profile-image" />
-            <div
-              class="flex flex-col xl:flex-row items-start xl:items-center xl:justify-between xl:w-full gap-y-2"
-            >
-              <p class="font-medium">{{ testimoni.username }}</p>
-              <img src="../assets/icons/rate-stars.png" alt="rating" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Pagination -->
+        <!-- Pagination Info -->
         <div
-          class="absolute inset-x-7 -bottom-5 flex xl:flex-col items-center justify-center gap-x-3 w-1/2 mx-auto xl:mx-0 xl:w-1 xl:gap-y-3 xl:h-1/2 xl:left-120 xl:top-20"
-        >
-          <div class="h-[3px] xl:h-full rounded-2xl bg-slate-700 w-full"></div>
-          <div class="h-[3px] xl:h-full rounded-2xl bg-slate-300 w-full"></div>
-          <div class="h-[3px] xl:h-full rounded-2xl bg-slate-300 w-full"></div>
-        </div>
+          class="testimoni-pagination absolute inset-x-7 -bottom-5 flex xl:flex-col items-center justify-center gap-x-3 w-1/2 mx-auto xl:mx-0 xl:w-1 xl:gap-y-3 xl:h-[100px] xl:left-120 xl:top-20"
+        ></div>
       </div>
     </div>
 
@@ -95,14 +86,12 @@ import { getImage } from '@/utils/getImage'
           </div>
 
           <!-- Button Register Now-->
-          <div class="">
-            <button
-              type="button"
-              class="py-3 px-7 font-medium text-[16px] rounded-[30px] bg-white text-[#3A0CA3]"
-            >
-              Register Now
-            </button>
-          </div>
+          <button
+            type="button"
+            class="py-3 px-7 font-medium text-[16px] rounded-[30px] cursor-pointer bg-white text-[#3A0CA3] hover:bg-primary hover:text-white transition-all duration-300"
+          >
+            Register Now
+          </button>
         </div>
 
         <!-- Doctor Image -->

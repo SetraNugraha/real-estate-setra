@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-
 const isActive = ref<string>('sale')
 </script>
 
@@ -15,9 +14,10 @@ const isActive = ref<string>('sale')
         <div
           class="relative font-poppins font-medium flex items-center justify-center gap-x-18 h-18"
         >
+          <!-- SALE Button -->
           <button
             type="button"
-            class="flex flex-col items-center justify-center transition-all duration-300"
+            class="flex flex-col items-center justify-center transition-all duration-300 cursor-pointer"
             :class="isActive === 'sale' ? 'text-primary' : 'text-slate-300'"
             @click="isActive = 'sale'"
           >
@@ -27,9 +27,11 @@ const isActive = ref<string>('sale')
               class="absolute bottom-0 h-1 bg-primary w-25 z-1 rounded-full"
             ></span>
           </button>
+
+          <!-- RENT Button -->
           <button
             type="button"
-            class="flex flex-col items-center justify-center transition-all duration-300"
+            class="flex flex-col items-center justify-center transition-all duration-300 cursor-pointer"
             :class="isActive === 'rent' ? 'text-primary' : 'text-slate-300'"
             @click="isActive = 'rent'"
           >
