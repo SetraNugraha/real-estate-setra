@@ -54,7 +54,7 @@ const heroImages: Array<string> = ['charming.png', 'grand.png', 'serene.png', 't
               <img
                 :src="getImage('properties', image)"
                 alt="img-swiper"
-                class="size-full object-cover rounded-[30px] w-[335px] h-[200px] xl:w-[540px] xl:h-[340px]"
+                class="size-full object-cover rounded-[30px] w-full h-[250px] xl:w-[540px] xl:h-[340px]"
               />
             </SwiperSlide>
           </Swiper>
