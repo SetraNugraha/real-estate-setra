@@ -92,7 +92,7 @@ const isActive = ref<string>('sale')
 
         <!-- Button Search -->
         <button
-          class="bg-primary w-full mt-10 flex items-center justify-center gap-x-3 h-14 rounded-full text-white font-poppins"
+          class="bg-primary w-full mt-10 flex items-center justify-center gap-x-3 h-14 rounded-full text-white font-poppins hover:brightness-70 cursor-pointer"
         >
           <img src="../assets/icons/search.svg" alt="search" />
           Search

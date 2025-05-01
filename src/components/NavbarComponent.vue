@@ -44,14 +44,16 @@ const menus: Array<string> = ['About', 'Listings', 'Services', 'Blogs']
       <div class="hidden xl:block">
         <div class="flex items-center gap-x-7">
           <!-- Auth -->
-          <button class="flex items-center gap-x-3">
+          <button
+            class="flex items-center gap-x-3 py-3 px-6 rounded-[50px] cursor-pointer hover:bg-slate-300 "
+          >
             <img src="../assets/icons/profile-circle.png" alt="profile-circle" />
             <p class="font-poppins font-medium text-[16px]">Login/Register</p>
           </button>
 
           <!-- Add Listings -->
           <button
-            class="flex items-center gap-x-3 py-3 px-6 rounded-[50px] bg-primary text-white cursor-pointer"
+            class="flex items-center gap-x-3 py-3 px-6 rounded-[50px] bg-primary text-white cursor-pointer hover:brightness-70"
           >
             <img src="../assets/icons/house-icon.svg" alt="house" class="size-5" />
             <p class="font-poppins font-medium text-[16px]">Add Listings</p>
