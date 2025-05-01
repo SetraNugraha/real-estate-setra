@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const menus: Array<string> = ['About', 'Listings', 'Services', 'Blogs']
+const menus: Array<string> = ['Home', 'About', 'Listings', 'Services', 'Blogs']
 </script>
 
 <template>
@@ -10,14 +10,9 @@ const menus: Array<string> = ['About', 'Listings', 'Services', 'Blogs']
         <div class="flex items-center gap-x-7">
           <a
             href="#"
-            class="text-[16px] font-medium font-poppins py-1 px-3 rounded-[30px] bg-[#c2cdff]"
-            >Home</a
-          >
-          <a
-            href="#"
             v-for="menu of menus"
             :key="menu.valueOf"
-            class="text-[16px] font-medium font-poppins"
+            class="text-[16px] font-medium font-poppins py-1 px-3 hover:rounded-[30px] hover:bg-[#c2cdff]"
             >{{ menu }}</a
           >
         </div>
@@ -45,7 +40,7 @@ const menus: Array<string> = ['About', 'Listings', 'Services', 'Blogs']
         <div class="flex items-center gap-x-7">
           <!-- Auth -->
           <button
-            class="flex items-center gap-x-3 py-3 px-6 rounded-[50px] cursor-pointer hover:bg-slate-300 "
+            class="flex items-center gap-x-3 py-3 px-6 rounded-[50px] cursor-pointer hover:bg-slate-300"
           >
             <img src="../assets/icons/profile-circle.png" alt="profile-circle" />
             <p class="font-poppins font-medium text-[16px]">Login/Register</p>
